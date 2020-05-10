@@ -1,54 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-<mata charset="utf-8">
-<!--meta http-equiv="refresh" content="10"-->
-<title>计科小白</title>
-  <!--[if lt IE 9]>
-  <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
-  <![endif]-->
-<style>
-body {
-	margin:0;
-}
-.header {
+    <mata charset="uft-8">
+    <title>站长百科</title>
+    <!--meta http-equiv="refresh" content="10"-->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .header{
+            padding: 0;
+            margin: 0;
+            background-color:rgb(50, 173, 250);
+            overflow: hidden;
 
-	background-color: #f1f1f1;
-	padding:20px;
-	text-align: center;
-}
-ul {
-	list-style-type:none;
-	margin: 0;
-	padding :0;
-	background-color: green;
-	overflow:hidden;
-}
-li {
-	float: left;
-}
-li a {
-	display: block;
-	color: #000;
-	padding: 8px 16px;
-	text-decoration: none;
-}
-li a:hover {
-	background-color: #555;
-	color: white;
-}
-</style>
+        }
+
+        .downth{
+            float: left;
+
+        }
+        .downth a{
+            padding: 10px 35px;
+            display: block;
+            color:white;
+            text-align:center;
+            text-decoration: none;
+        }
+        .downth a:hover {
+            background-color:rgb(40, 151, 255)
+        }
+        .downlist{
+            z-index: 2;
+            display: none;
+            position: absolute;
+            background-color:rgb(45, 101, 255);
+            border-top:solid 2px rgb(45, 101, 255);
+
+        }
+
+        .downlist a{
+            padding: 10px 10px;
+            text-align:center;
+            text-decoration:none;
+            color:rgb(49, 83, 179);
+            display:block;
+            
+        }
+
+        .downlist a:hover{
+            color:white;
+            background-color:rgb(45, 101, 255);
+            text-decoration:underline;
+            font-weight:bold;
+        }
+
+        .downth:hover .downlist, .downall{
+            display:block;
+        }
+        .downall{
+            width:100%;
+            background-color:rgba(45, 101, 255, 0.596);
+            position:absolute;
+            display:none;
+        }
+        .player{
+            position:absolute;
+            top:10%;
+            left:30%;
+            width:40%;
+            height:255px;
+        }
+    </style>
 </head>
 <body>
-<div class="header">
-<h1>计科小白</h1>
-</div>
-<ul>
-<li><a href="http://39.97.160.49/hello.html">页</a></li>
-<li><a href="http://39.97.160.49/hello.html">新闻</a></li>
-<li><a href="http://39.97.160.49/hello.html">关于</a></li>
-<li><a href="http://39.97.160.49/hello.html">联系</a></li>
-<li><a href="londin.html">登录/注册</a></li>
-</ul>
+    <div class="header">
+        <div class="downth"><a target="_blank" href="https://baike.baidu.com/calendar/">首页</a>
+            <div class="downlist">
+                <a target="_blank" href="https://baike.baidu.com/calendar/" style="padding:10px 1px;">历史上的今天</a>
+                <a target="_blank" href="https://baike.baidu.com/vbaike/">百科冷知识</a>
+                <a target="_blank" hreff="https://baike.baidu.com/vbaike#gallary">图解百科</a>
+            </div></div>
+        <div class="downth"><a target="_blank" href="#">分类</a>
+            <div class="downlist">
+                <a target="_blank" href="https://baike.baidu.com/art" style="float:left; ">艺术</a><a target="_blank" href="https://baike.baidu.com/science" style="float:left;">科学</a>
+                <a target="_blank" href="http://baike.baidu.com/ziran" style="float:left; clear:both;">自然</a><a target="_blank" href="http://baike.baidu.com/wenhua" style="float:left;">文化</a>
+                <a target="_blank" href="http://baike.baidu.com/dili" style="float:left; clear:both;">地理</a><a target="_blank" href="http://baike.baidu.com/shenghuo" style="float:left;">生活</a>
+                <a target="_blank" href="http://baike.baidu.com/shehui" style="float:left; clear:both;">社会</a><a target="_blank" href="http://baike.baidu.com/renwu" style="float:left;">人物</a>
+                <a target="_blank" href="http://baike.baidu.com/jingji" style="float:left; clear:both;">经济</a><a target="_blank" href="http://baike.baidu.com/tiyu" style="float:left;">体育</a>
+                <a target="_blank" href="http://baike.baidu.com/lishi" style="float:left; clear:both;">历史</a>
+            </div>
+        </div>
+        <div class="downth"><a target="_blank" href="#">秒懂百科</a>
+            <div class="downlist">
+                <a target="_blank" href="https://child.baidu.com/">懂啦</a>
+                <a target="_blank" href="https://baike.baidu.com/item/%E7%A7%92%E6%87%82%E6%9C%AC%E5%B0%8A%E7%AD%94">秒懂本尊答</a>
+                <a target="_blank" href="https://baike.baidu.com/item/%E7%A7%92%E6%87%82%E5%A4%A7%E5%B8%88%E8%AF%B4">秒懂大师说</a>
+                <a target="_blank" href="https://baike.baidu.com/item/%E7%A7%92%E6%87%82%E7%9C%8B%E7%93%A6%E7%89%B9">秒懂看瓦特</a>
+                <a target="_blank" href="https://baike.baidu.com/item/%E7%A7%92%E6%87%82%E4%BA%94%E5%8D%83%E5%B9%B4">秒懂五千年</a>
+                <a target="_blank" href="https://baike.baidu.com/item/%E7%A7%92%E6%87%82%E5%85%A8%E8%A7%86%E7%95%8C">秒懂看世界</a>
+            </div>
+        </div>
+        <div class="downth"><a target="_blank" href="#">特色百科</a>
+        <div class="downlist">
+            <a target="_blank" href="https://baike.baidu.com/museum/">数字博物馆</a>
+            <a target="_blank" href="https://baike.baidu.com/feiyi?fr=dhlfeiyi">非遗百科</a>
+            <a target="_blank" href="http://baike.baidu.com/city/">城市百科</a>
+            <a target="_blank" href="https://baike.baidu.com/wikicategory/view?categoryName=%E6%81%90%E9%BE%99%E5%A4%A7%E5%85%A8">恐龙百科</a>
+            <a target="_blank" href="https://baike.baidu.com/wikicategory/view?categoryName=%E5%A4%9A%E8%82%89%E6%A4%8D%E7%89%A9">多肉百科</a>
+        </div>
+        </div>
+        <div class="downth"><a target="_blank" href="#">用户</a>
+            <div class="downlist">
+                <a target="_blank" href="https://baike.baidu.com/kedou/">蝌蚪团</a>
+                <a target="_blank" href="https://baike.baidu.com/item/%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91%EF%BC%9A%E7%87%83%E6%A2%A6%E8%AE%A1%E5%88%92">燃梦计划</a>
+                <a target="_blank" href="https://baike.baidu.com/item/%E7%99%BE%E7%A7%91%E5%88%86%E7%B1%BB%E8%BE%BE%E4%BA%BA%E5%9B%A2">分类达人</a>
+                <a target="_blank" href="https://baike.baidu.com/task/">百科任务</a>
+                <a target="_blank" href="http://baike.baidu.com/mall/">百科商城</a>
+            </div>
+        
+        </div>
+
+        <div class="downth"><a target="_blank" href="#">权威合作</a>
+            <div class="downlist">
+                <a target="_blank" href="https://baike.baidu.com/cooperation#joint">合作模式</a>
+                <a target="_blank" href="https://baike.baidu.com/cooperation#issue">常见问题</a>
+                <a target="_blank" href="https://baike.baidu.com/cooperation#connection">联系方式</a>
+            </div>
+        </div>
+        <div class="downth" style="float:right;position:absolute; right: 15%;"><a target="_blank" style="background-color:rgb(50, 173, 250);" href="https://baike.baidu.com/usercenter">|个人中心</a></div>
+    </div>
+    <div style="width: 100%; height:300px; background-color:rgb(103, 88, 241);">
+        <div z-index=-1 class="player">
+            <iframe z-index=-1 height=100% width=100% src='https://player.youku.com/embed/XNDIzNzQ1MzAzMg==' frameborder=0 'allowfullscreen'></iframe>
+            </div>
+    </div>
 </body>
 </html>
